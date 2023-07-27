@@ -1,0 +1,38 @@
+.hero-section {
+  justify-content: flex-start;
+
+  height: auto;
+}
+
+.hero-section .container {
+  margin: 5%;
+}
+.hero-section .formatos,
+.hero-section .content {
+  justify-content: center;
+}
+.hero-section .hero-text {
+  flex-direction: column;
+  justify-content: left;
+  display: flex;
+  align-items: left;
+}
+.hero-section h1 {
+  font-size: xx-large;
+
+  align-items: center;
+}
+
+.hero-section h4 {
+  font-size: x-large;
+}
+.hero-section h5 {
+  font-size: larger;
+}
+
+.hero-section .imagen-inicio {
+  width: 80%;
+  margin-right: auto;
+
+  border-radius: 50%;
+}

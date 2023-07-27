@@ -1,0 +1,14 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  list-style: none;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 90%;
+  font: inherit;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 6px;
+  background: white;
+}

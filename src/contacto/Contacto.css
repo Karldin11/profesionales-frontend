@@ -1,0 +1,17 @@
+.footer-contacto {
+  margin: 0%;
+  background-color: #223a6b;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  z-index: 5;
+}
+.container {
+  margin: 0%;
+  padding: 0%;
+}
+.elementos {
+  width: 100%;
+  padding: 0%;
+}

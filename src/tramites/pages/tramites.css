@@ -1,0 +1,25 @@
+.tramites-content {
+  width: 90%;
+  margin: 5%;
+  align-items: center;
+  display: block;
+  justify-content: center;
+}
+.tramites-title {
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  border: 2px solid #223a6b;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.tramites-item-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}

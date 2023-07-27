@@ -1,0 +1,49 @@
+.admin {
+  margin: 10rem auto;
+  width: 80%;
+}
+.admin-crear {
+  scroll-behavior: auto;
+  position: relative;
+  list-style: none;
+  margin: 0 auto;
+  top: 5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 6px;
+  background: white;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.admin-crear li {
+  margin: 1rem;
+}
+
+.admin-crear a {
+  border: 1px solid transparent;
+  color: #223a6b;
+  text-decoration: underline;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+.admin-crear a:hover,
+.admin-crear a:active,
+.admin-crear a.active {
+  text-decoration: underline;
+}
+.admin-crear button a {
+  color: #223a6b;
+}
+
+.admin-crear button:hover,
+.admin-crear button:active {
+  text-decoration: underline;
+}

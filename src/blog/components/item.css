@@ -1,0 +1,121 @@
+.item {
+  /* Card */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5%;
+  max-width: 350px;
+  object-fit: contain;
+
+  background: #ffffff;
+  border: 1px solid #d8d8d8;
+  box-shadow: 34.8541px 29.626px 48.34px rgba(51, 102, 255, 0.05);
+  border-radius: 20px;
+  margin: 5%;
+}
+
+.item a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+
+  color: #2d2d2d;
+  background: #ffffff;
+}
+
+.item a:hover,
+.item a:active {
+  background: #ffffff;
+}
+
+.item__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+
+  width: 90%;
+  height: 90%;
+}
+
+.item__image {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-items: center;
+  text-align: center;
+  margin: 0%;
+}
+.item__image img {
+  width: 5rem;
+  height: 5rem;
+  margin: 0%;
+}
+.item__info h2 {
+  width: 310px;
+  height: 72px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: xx-large;
+  line-height: 130%;
+  /* or 36px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #2d2d2d;
+}
+
+.item:hover h2,
+.item:active h2,
+.item:hover h3,
+.item:active h3 {
+  color: #2d2d2d;
+}
+
+.item__info h3 {
+  width: 310px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: large;
+  line-height: 150%;
+  /* or 24px */
+
+  text-align: center;
+
+  color: #2d2d2d;
+}
+
+.item__info p {
+  text-align: center;
+}
+
+.item__actions {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.item__modal-content {
+  padding: 0;
+}
+
+.item__modal-actions {
+  text-align: right;
+}
+
+.item__actions button,
+.item__actions a {
+  margin: 0.5rem;
+}

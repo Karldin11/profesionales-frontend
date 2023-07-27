@@ -1,0 +1,19 @@
+.carousel {
+  top: 1rem;
+  padding: auto;
+  position: relative;
+}
+
+.d-block w-100 {
+  display: block;
+  height: auto;
+  max-width: auto;
+  line-height: 4;
+  margin: auto;
+  width: auto;
+}
+.carousel,
+.carousel-inner > .item > img {
+  width: auto;
+  height: auto;
+}
