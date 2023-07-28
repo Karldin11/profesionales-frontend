@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-
+import { login } from "../../../images/login.png";
 import { AuthContext, AdminContext } from "../../context/auth-context";
 
 import "./NavLinks.css";
@@ -33,6 +33,11 @@ const NavLinks = (props) => {
       <button className="highlighted">
         <NavLink to="/directorio">Directorio</NavLink>
       </button>
+      {!auth.isLoggedIn && (
+        <li className="normal">
+          <NavLink to="/auth">{login}</NavLink>
+        </li>
+      )}
 
       {auth.isLoggedIn && (
         <button className="salir" onClick={auth.logout}>
