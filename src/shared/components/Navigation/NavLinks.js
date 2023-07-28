@@ -36,7 +36,7 @@ const NavLinks = (props) => {
       {!auth.isLoggedIn && (
         <li className="normal">
           <NavLink to="/auth">
-            <img src={login}></img>
+            <img src={login} alt="login"></img>
           </NavLink>
         </li>
       )}
