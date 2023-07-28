@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { NavLink } from "react-router-dom";
-import { login } from "../../../images/login.png";
+import { NavLink, Link } from "react-router-dom";
+import login from "../../../images/login.svg";
 import { AuthContext, AdminContext } from "../../context/auth-context";
 
 import "./NavLinks.css";
@@ -35,9 +35,9 @@ const NavLinks = (props) => {
       </button>
       {!auth.isLoggedIn && (
         <li className="normal">
-          <NavLink to="/auth">
-            <img src={login} alt="login"></img>
-          </NavLink>
+          <Link to="/auth">
+            <img src={login} alt="login" height="30"></img>
+          </Link>
         </li>
       )}
 
