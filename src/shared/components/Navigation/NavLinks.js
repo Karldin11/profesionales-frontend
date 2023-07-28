@@ -35,7 +35,9 @@ const NavLinks = (props) => {
       </button>
       {!auth.isLoggedIn && (
         <li className="normal">
-          <NavLink to="/auth">{login}</NavLink>
+          <NavLink to="/auth">
+            <img src={login}></img>
+          </NavLink>
         </li>
       )}
 
