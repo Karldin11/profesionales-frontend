@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
-
+import { AuthContext, AdminContext } from "../../shared/context/auth-context";
 import "./Administrar.css";
 
 function Administrar() {
+  const auth = useContext(AuthContext);
+
+  const administrator = useContext(AdminContext);
   return (
     <div className="admin">
       <ul className="admin-crear">
@@ -60,6 +63,17 @@ function Administrar() {
           <NavLink to="/publicacion/vinculacion/lista">
             Editar departamentos de vinculación
           </NavLink>
+        </li>
+        {auth.isLoggedIn && administrator.isAdmin && <h2>Usuarios</h2>}
+        <li>
+          {auth.isLoggedIn && administrator.isAdmin && (
+            <NavLink to="/users/new">Agregar Usuario</NavLink>
+          )}
+        </li>
+        <li>
+          {auth.isLoggedIn && administrator.isAdmin && (
+            <NavLink to="/users/lista">Editar datos de Usuarios</NavLink>
+          )}
         </li>
       </ul>
     </div>

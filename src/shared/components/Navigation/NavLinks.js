@@ -1,17 +1,16 @@
 import React, { useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 import login from "../../../images/login.svg";
-import { AuthContext, AdminContext } from "../../context/auth-context";
+import { AuthContext } from "../../context/auth-context";
 
 import "./NavLinks.css";
 
-const NavLinks = (props) => {
+const NavLinks = () => {
   const auth = useContext(AuthContext);
-  const administrator = useContext(AdminContext);
 
   return (
     <ul className="nav-links">
-      {auth.isLoggedIn && administrator.isAdmin && (
+      {auth.isLoggedIn && (
         <li className="normal">
           <NavLink to="/administrar">Administrar</NavLink>
         </li>

@@ -76,17 +76,17 @@ const Auth = () => {
           "Content-Type": "application/json",
         }
       );
-      if (formState.inputs.username.value === "admin") {
+      if (responseData.user.role === "admin") {
         administrator.adminProfile();
-      } else {
-        administrator.editorProfile();
       }
 
       // console.log(responseData.user.orders.length);
       // const quantity = responseData.user.orders.length;
       auth.login(responseData.user.id);
       history.push("/");
-    } catch (err) {}
+    } catch (err) {
+      console.log(err);
+    }
     // } else {
     //   try {
     //     const responseData = await sendRequest(
